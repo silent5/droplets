@@ -9,7 +9,7 @@ Droplets is made up of four note events. A note event is dropped from a certain 
 A note event's height can be subject to one of four rules when that note event is triggered (increment, decrement, positive random offset, negative random offset).
 
 
-The Droplets interface is made up of three panels:
+### The Droplets interface is made up of three panels
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Panel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Description
 -----|-----------
