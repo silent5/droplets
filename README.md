@@ -10,8 +10,10 @@ that invites experimentation and interaction.
 Droplets is made up of four note events. A note event is dropped from a certain
 height, and when it reaches the ground that note event is triggered. Each note event 
 is composed of a base pitch, velocity, duration and probability. A note event drops
-at its own clock rate, and features an interval offset list processing section 
-that allows Droplets to output four independent melodic sequences simultaneously.
+at its own clock rate, and features an interval offset list processing section that
+enables each note event to create a melody centered on the base pitch. Droplets can
+output four independent melodic sequences simultaneously. 
+
 A note event's height can be subject to one of four rules when that note event is
 triggered (increment, decrement, positive random offset, negative random offset).
 
