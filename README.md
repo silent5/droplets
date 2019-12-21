@@ -18,11 +18,14 @@ triggered (increment, decrement, positive random offset, negative random offset)
 
 The Droplets interface is made up of three panes:
 
+![Droplets Image](left.jpg)
 - The leftmost pane contains 4 color coded sliders. Each of these represent one note event,
 and are used to set the height from which a note event will be dropped.
 
+![Droplets Image](middle.jpg)
 - The middle pane is used to set the parameters for each of the four note events. It will
 change its contents (and color) based on which of the four note events is currently selected.
 
+![Droplets Image](right.jpg)
 - The rightmost pane is the global area. It is used for preset management, setting the trigger
 rules for each note event, and for setting the global pitch quantization.
