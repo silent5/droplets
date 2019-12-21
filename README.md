@@ -8,11 +8,10 @@ Droplets is made up of four note events. A note event is dropped from a certain 
 
 A note event's height can be subject to one of four rules when that note event is triggered (increment, decrement, positive random offset, negative random offset).
 
-The Droplets interface is made up of three panels
+The Droplets interface is made up of three panels:
 
-<table>
-  <tr><td width = "30%"><img src = "img/left.jpg"></td><td>The leftmost panel contains 4 color coded sliders. Each of these represent one note event, and are used to set the height from which a note event will be dropped. A mute button for each note event is located at the top of each height slider. When a note event has a trigger rule applied to it, a small letter "R" will appear at the lower left of the height slider.</td></tr>
-  <tr><td width = "30%"><img src = "img/middle.jpg"></td><td>The middle panel is used to set the parameters for each of the four note events. It will change its contents (and color) based on which of the four note events is currently selected.</td></tr>
-  <tr><td width = "30%"><img src = "img/right.jpg"></td><td>The rightmost panel is the global area. It is used for preset management, setting the trigger rules for each note event, and for setting the global pitch quantization.</td></tr>
-
-</table>  
+Panel|Description
+-----|-----------
+![Droplets Image](img/left.jpg)| The leftmost panel contains 4 color coded sliders. Each of these represent one note event, and are used to set the height from which a note event will be dropped. A mute button for each note event is located at the top of each height slider. When a note event has a trigger rule applied to it, a small letter "R" will appear at the lower left of the height slider.
+![Droplets Image](img/middle.jpg) | The middle panel is used to set the parameters for each of the four note events. It will change its contents (and color) based on which of the four note events is currently selected.
+![Droplets Image](img/right.jpg) | The rightmost panel is the global area. It is used for preset management, setting the trigger rules for each note event, and for setting the global pitch quantization.
