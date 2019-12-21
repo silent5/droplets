@@ -1,6 +1,6 @@
 # Droplets
 
-![Droplets Image](Droplets.jpg)
+![Droplets Image](img/Droplets.jpg)
 
 A Max For Live counter based note sequencer inspired by the excellent Meadowphysics patch/eurorack module from monome. Droplets is my attempt at repurposing a few of the ideas presented in Meadowphysics for use without a grid, while still trying to maintain an interface that invites experimentation and interaction.
 
@@ -13,6 +13,6 @@ The Droplets interface is made up of three panels:
 
 Panel|Description
 -----|-----------
-![Droplets Image](left.jpg) | The leftmost panel contains 4 color coded sliders. Each of these represent one note event, and are used to set the height from which a note event will be dropped.
-![Droplets Image](middle.jpg) | The middle panel is used to set the parameters for each of the four note events. It will change its contents (and color) based on which of the four note events is currently selected.
-![Droplets Image](right.jpg) | The rightmost panel is the global area. It is used for preset management, setting the trigger rules for each note event, and for setting the global pitch quantization.
+![Droplets Image](img/left.jpg) | The leftmost panel contains 4 color coded sliders. Each of these represent one note event, and are used to set the height from which a note event will be dropped.
+![Droplets Image](img/middle.jpg) | The middle panel is used to set the parameters for each of the four note events. It will change its contents (and color) based on which of the four note events is currently selected.
+![Droplets Image](img/right.jpg) | The rightmost panel is the global area. It is used for preset management, setting the trigger rules for each note event, and for setting the global pitch quantization.
