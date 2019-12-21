@@ -1,6 +1,6 @@
 # Droplets
 
-![Droplets Image](img/Droplets.jpg)
+![Droplets Image](Droplets.jpg)
 
 A counter based note sequencer inspired by the excellent Meadowphysics patch/eurorack 
 module from monome. Droplets is my attempt at repurposing a few of the ideas presented 
