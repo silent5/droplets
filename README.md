@@ -2,20 +2,11 @@
 
 ![Droplets Image](Droplets.jpg)
 
-A counter based note sequencer inspired by the excellent Meadowphysics patch/eurorack 
-module from monome. Droplets is my attempt at repurposing a few of the ideas presented 
-in Meadowphysics for use without a grid, while still trying to maintain an interface 
-that invites experimentation and interaction.
+A Max For Live counter based note sequencer inspired by the excellent Meadowphysics patch/eurorack module from monome. Droplets is my attempt at repurposing a few of the ideas presented in Meadowphysics for use without a grid, while still trying to maintain an interface that invites experimentation and interaction.
 
-Droplets is made up of four note events. A note event is dropped from a certain
-height, and when it reaches the ground that note event is triggered. Each note event 
-is composed of a base pitch, velocity, duration and probability. A note event drops
-at its own clock rate, and features an interval offset list processing section that
-enables each note event to create a melody centered on the base pitch. Droplets can
-output four independent melodic sequences simultaneously. 
+Droplets is made up of four note events. A note event is dropped from a certain height, and when it reaches the ground that note event is triggered. Each note event is composed of a base pitch, velocity, duration and probability. A note event drops at its own clock rate, and features an interval offset list processing section that enables each note event to create a melody centered on the base pitch. Droplets can output four independent melodic sequences simultaneously. 
 
-A note event's height can be subject to one of four rules when that note event is
-triggered (increment, decrement, positive random offset, negative random offset).
+A note event's height can be subject to one of four rules when that note event is triggered (increment, decrement, positive random offset, negative random offset).
 
 
 The Droplets interface is made up of three panels:
