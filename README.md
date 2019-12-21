@@ -8,8 +8,8 @@ Droplets is made up of four note events. A note event is dropped from a certain 
 
 A note event's height can be subject to one of four rules when that note event is triggered (increment, decrement, positive random offset, negative random offset).
 
-The Droplets interface is made up of three panels:
 
+The Droplets interface is made up of three panels:
 Panel|Description
 -----|-----------
 ![Droplets Image](img/left.jpg)| The leftmost panel contains 4 color coded sliders. Each of these represent one note event, and are used to set the height from which a note event will be dropped. A mute button for each note event is located at the top of each height slider. When a note event has a trigger rule applied to it, a small letter "R" will appear at the lower left of the height slider.
