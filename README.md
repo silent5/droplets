@@ -20,3 +20,15 @@ A note event's height can be subject to one of four rules when that note event i
 ### About those interval offsets...
 
 ![Droplets Image](img/intervals.jpg)
+
+Each of the four note events contains its own interval offset list processor. The concept behind this comes from the integer notation approach to pitches you might find in live coding environments like Tidal Cycles and Sonic Pi - integer values represent musical semitones that are added to the value set by the Note and Oct controls. 
+
+When you enter an integer value into the Interval Offsets text area, it will be added to the base pitch when that note event is triggered. If you enter more than one integer value into the Interval Offsets text area, the interval offsets will be added to the base pitch in succession, each time the note event is triggered. If you enter a lowercase r into the Interval Offsets text area, it will be processed as a rest and there will be no output when that element of the list is processed.
+
+The Count button applies the integer offset(s) every N steps, where N is the value set in the number box to the right of the count button. For example, if you have a value of 12 in the Interval Offsets text area and the Count button enabled with a value of 3, the interval offset value will only be added to every 3rd trigger of that note event.
+
+The CLR button clears the contents of the Interval Offsets text area, and isn't terribly exciting.
+
+The Probability control sets the probability that the value(s) in the Interval Offsets text area will be added to the base pitch. This works independently from the Probability control in the main Note Event edit area.
+
+
