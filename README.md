@@ -30,7 +30,7 @@ When you enter an integer value into the Interval Offsets text area, it will be 
 
 *Note that you can add to and edit the list of interval offsets while the clock is running!* 
 
-The Count button applies the integer offset(s) every N steps, where N is the value set in the number box to the right of the count button. For example, if you have a value of 12 in the Interval Offsets text area and the Count button enabled with a value of 3, the interval offset value will only be added to every 3rd trigger of that note event.
+The Count button applies the integer offset(s) every N triggers, where N is the value set in the number box to the right of the count button. For example, if you have a value of 12 in the Interval Offsets text area and the Count button enabled with a value of 3, the interval offset value will only be added to every 3rd trigger of that note event.
 
 The CLR button clears the contents of the Interval Offsets text area, and isn't terribly exciting.
 
