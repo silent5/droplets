@@ -8,6 +8,9 @@ Droplets is made up of four note events. A note event is dropped from a certain 
 
 A note event's height can be subject to one of four rules when that note event is triggered (increment, decrement, positive random offset, negative random offset).
 
+Outgoing notes can have their pitch quantized to a variety of scales.
+
+Droplets is probably not the kind of sequencer you'll want to use all the time. It's not intended for you to use as a tool to realize that musical idea you have in your head with any degree of precision. Droplets is more akin to something like the Roland MC-202 - you try to program it, it tries to program you, and eventually you both come to an agreement that perhaps neither of you intended.
 
 ### The Droplets interface is made up of three panels
 
@@ -23,7 +26,7 @@ A note event's height can be subject to one of four rules when that note event i
 
 Each of the four note events contains its own interval offset list processor. The concept behind this comes from the integer notation approach to pitches you might find in live coding environments like Tidal Cycles and Sonic Pi - integer values represent musical semitones that are added to the value set by the Note and Oct controls. 
 
-When you enter an integer value into the Interval Offsets text area, it will be added to the base pitch when that note event is triggered. If you enter more than one integer value into the Interval Offsets text area, the interval offsets will be added to the base pitch in succession, each time the note event is triggered. If you enter a lowercase r into the Interval Offsets text area, it will be processed as a rest and there will be no output when that element of the list is processed.
+When you enter an integer value into the Interval Offsets text area, it will be added to the base pitch when that note event is triggered. If you enter more than one integer value (separated by spaces) into the Interval Offsets text area, the interval offsets will be added to the base pitch in succession, each time the note event is triggered. If you enter a lowercase r into the Interval Offsets text area, it will be processed as a rest and there will be no output when that element of the list is processed. As soon as you press the enter key, the interval offset list will be updated with any edits you've made.
 
 *Note that you can add to and edit the list of interval offsets while the clock is running!* 
 
