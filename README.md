@@ -31,4 +31,6 @@ The CLR button clears the contents of the Interval Offsets text area, and isn't 
 
 The Probability control sets the probability that the value(s) in the Interval Offsets text area will be added to the base pitch. This works independently from the Probability control in the main Note Event edit area.
 
+### About those rules...
 
+When a trigger rule is enabled for a note event, a yellow "R" will appear on that note event's height slider. This is in part because the height slider will not behave normally when a rule is enabled. Kind of hard to describe but just play with it and see. 
