@@ -25,6 +25,8 @@ Each of the four note events contains its own interval offset list processor. Th
 
 When you enter an integer value into the Interval Offsets text area, it will be added to the base pitch when that note event is triggered. If you enter more than one integer value into the Interval Offsets text area, the interval offsets will be added to the base pitch in succession, each time the note event is triggered. If you enter a lowercase r into the Interval Offsets text area, it will be processed as a rest and there will be no output when that element of the list is processed.
 
+*Note that you can add to and edit the list of interval offsets while the clock is running!* 
+
 The Count button applies the integer offset(s) every N steps, where N is the value set in the number box to the right of the count button. For example, if you have a value of 12 in the Interval Offsets text area and the Count button enabled with a value of 3, the interval offset value will only be added to every 3rd trigger of that note event.
 
 The CLR button clears the contents of the Interval Offsets text area, and isn't terribly exciting.
