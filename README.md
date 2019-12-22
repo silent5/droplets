@@ -10,8 +10,6 @@ A note event's height can be subject to one of four rules when that note event i
 
 Outgoing notes can have their pitch quantized to a variety of scales.
 
-Droplets is probably not the kind of sequencer you'll want to use all the time. It's not intended for you to use as a tool to realize that musical idea you have in your head with any degree of precision. Droplets is more akin to something like the Roland MC-202 - you try to program it, it tries to program you, and eventually you both come to an agreement that perhaps neither of you intended.
-
 ### The Droplets interface is made up of three panels
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Panel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Description
