@@ -50,7 +50,7 @@ s4i|A sus4 chord in the first inversion (F-G-C)
 
 Click on the '?' icon above the Interval Offsets text area for a full description of the chord syntax, as well as all of the other functionality related to the Interval Offsets text area. 
 
-It's also worth mentioning that you can add to and edit the list of interval offsets while the clock is running.
+Note that you can add to and edit the list of interval offsets and chord shapes while the clock is running. The list of offsets will be updated and processed as soon as you press the enter key.
 
 The Count button applies the integer offset(s) every N triggers, where N is the value set in the number box to the right of the Count button. For example, if you have a value of 12 in the Interval Offsets text area and the Count button enabled with a value of 2, every second trigger of that droplet wil be transposed up an octave.
 
