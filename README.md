@@ -16,7 +16,7 @@ Panel|Description
 -----|-----------
 ![Droplets Image](img/left.jpg) | The leftmost panel contains 4 color coded sliders. Each of these represent one droplet, and are used to set the height from which a droplet will fall. A mute button for each droplet is located at the top of each height slider. When a droplet has a trigger rule applied to it, a small letter "R" will appear at the lower left of the height slider.
 ![Droplets Image](img/middle.jpg) ![Droplets Image](img/middleAll.jpg)| The middle panel is used to set the parameters for each of the four droplets. It will change its contents (and color) based on which of the four droplets is currently selected. A special "All" mode provides an overview of the essential parameters for every droplet from one high-level view.
-![Droplets Image](img/right.jpg) | The rightmost panel is the global area. It is used for preset management, setting the trigger rules for droplet, and for setting the global pitch quantization.
+![Droplets Image](img/right.jpg) | The rightmost panel is the global area. It is used for preset management, setting the trigger rules for each droplet, and for setting the global pitch quantization.
 
 ### About those interval offsets...
 
@@ -66,8 +66,8 @@ The trigger rules in the right hand panel are applied to a droplet's height valu
 Rule|Result
 :----:|------
 ADD| The droplet's height is increased by one after it is triggered. The range of the increase is bound by the value in the range control.
-SUB|The droplet's height is decreased by one after it is triggered. The range of the increase is bound by the value in the range control.
+SUB|The droplet's height is decreased by one after it is triggered. The range of the decrease is bound by the value in the range control.
 R+|The droplet's height is increased by a random amount after it is triggered. The range of the increase is bound by the value in the range control.
-R-|The droplet's height is increased by a random amount after it is triggered. The range of the increase is bound by the value in the range control.
+R-|The droplet's height is decreased by a random amount after it is triggered. The range of the decrease is bound by the value in the range control.
 
 When a trigger rule is enabled for a note event, a yellow "R" will appear on that note event's height slider. This is in part because the height slider will not behave normally when a rule is enabled. Kind of hard to describe but just play with it and see. 
