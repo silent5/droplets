@@ -8,7 +8,7 @@ Droplets is made up of four note events, each called a droplet. A droplet is dro
 
 A droplet's height can be subject to one of four rules when that droplet is triggered (increment, decrement, positive random offset, negative random offset).
 
-Outgoing notes can have their pitch quantized to a variety of scales. Each droplet can also be set to tranpose its base pitch by incoming MIDI notes.
+Outgoing notes can have their pitch quantized to a variety of scales. Each droplet can also be set to transpose its base pitch by incoming MIDI notes.
 
 ### The Droplets interface is made up of three panels
 
