@@ -4,35 +4,56 @@
 
 A Max For Live counter based note sequencer inspired by the excellent [Meadowphysics](https://monome.org/docs/meadowphysics/) patch/eurorack module from monome. Droplets is my attempt at repurposing a few of the ideas presented in Meadowphysics for use without a grid, while still trying to maintain an interface that invites experimentation and interaction.
 
-Droplets is made up of four note events. A note event is dropped from a certain height, and when it reaches the ground that note event is triggered. Each note event is composed of a base pitch, velocity, duration and probability. A note event drops at its own clock rate (relative to Live's tempo), and features an interval offset list processing section that enables each note event to create a melody centered on the base pitch. Droplets can output four independent melodic sequences simultaneously. 
+Droplets is made up of four note events, each called a droplet. A droplet is dropped from a certain height, and when it reaches the ground that droplet is triggered. Each droplet is composed of a base pitch, velocity, duration and trigger probability. A droplet drops at its own clock rate (relative to Live's tempo), and features an interval offset list processing section that enables each droplet to create a melody or chord centered on the base pitch. A single instance of Droplets can output four independent melodic sequences simultaneously.
 
-A note event's height can be subject to one of four rules when that note event is triggered (increment, decrement, positive random offset, negative random offset).
+A droplet's height can be subject to one of four rules when that droplet is triggered (increment, decrement, positive random offset, negative random offset).
 
-Outgoing notes can have their pitch quantized to a variety of scales.
+Outgoing notes can have their pitch quantized to a variety of scales. Each droplet can also be set to tranpose its base pitch by incoming MIDI notes.
 
 ### The Droplets interface is made up of three panels
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Panel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Description
 -----|-----------
-![Droplets Image](img/left.jpg) | The leftmost panel contains 4 color coded sliders. Each of these represent one note event, and are used to set the height from which a note event will be dropped. A mute button for each note event is located at the top of each height slider. When a note event has a trigger rule applied to it, a small letter "R" will appear at the lower left of the height slider.
-![Droplets Image](img/middle.jpg) | The middle panel is used to set the parameters for each of the four note events. It will change its contents (and color) based on which of the four note events is currently selected.
-![Droplets Image](img/right.jpg) | The rightmost panel is the global area. It is used for preset management, setting the trigger rules for each note event, and for setting the global pitch quantization.
+![Droplets Image](img/left.jpg) | The leftmost panel contains 4 color coded sliders. Each of these represent one droplet, and are used to set the height from which a droplet will fall. A mute button for each droplet is located at the top of each height slider. When a droplet has a trigger rule applied to it, a small letter "R" will appear at the lower left of the height slider.
+![Droplets Image](img/middle.jpg) | The middle panel is used to set the parameters for each of the four droplets. It will change its contents (and color) based on which of the four droplets is currently selected. A special "All" mode provides an overview of the essential parameters for every droplet from one high-level view.
+![Droplets Image](img/right.jpg) | The rightmost panel is the global area. It is used for preset management, setting the trigger rules for droplet, and for setting the global pitch quantization.
 
 ### About those interval offsets...
 
 ![Droplets Image](img/intervals.jpg)
 
-Each of the four note events contains its own interval offset list processor. The concept behind this comes from the integer notation approach to pitches you might find in live coding environments like Tidal Cycles and Sonic Pi - integer values represent musical semitones that are added to the value set by the Note and Oct controls. 
+Each droplet contains its own interval offset list processor. This looks like a boring text entry field, but it's a very simple and powerful way to add more interest to the sequences you create with Droplets.
 
-When you enter an integer value into the Interval Offsets text area, it will be added to the base pitch when that note event is triggered. If you enter more than one integer value (separated by spaces) into the Interval Offsets text area, the interval offsets will be added to the base pitch in succession, each time the note event is triggered. If you enter a lowercase r into the Interval Offsets text area, it will be processed as a rest and there will be no output when that element of the list is processed. As soon as you press the enter key, the interval offset list will be updated with any edits you've made.
+The concept behind this comes from the integer notation approach to pitches you might find in live coding environments like Tidal Cycles and Sonic Pi - integer values entered into the list processor represent musical semitones, where a value of 1 is equal to one semitone. A few quick examples:
 
-*Note that you can add to and edit the list of interval offsets while the clock is running!* 
+0   = no offset
+7   = a positive offset of 7 semitones (i.e. a fifth up)
+-12 = a negative offset of 12 semitones (i.e. an octave down)
 
-The Count button applies the integer offset(s) every N triggers, where N is the value set in the number box to the right of the Count button. For example, if you have a value of 12 in the Interval Offsets text area and the Count button enabled with a value of 3, the interval offset value will only be added to every 3rd trigger of that note event.
+When you enter an integer value into the Interval Offsets text area and hit the enter key, it will be added to the base pitch set by the Note and Oct controls when that droplet is triggered. 
+
+If you enter more than one integer (separated by spaces) into the Interval Offsets text area, the interval offsets will be added to the base pitch in succession, one for each time the note event is triggered. When the end of the offset list is reached, it loops back to the beginning at the next trigger event.
+
+If you enter a lowercase r into the Interval Offsets text area, it will be processed as a rest and there will be no output when that element of the list is processed. 
+
+There is also a simple syntax in place for telling the droplet to output a particular chord shape. A few quick examples:
+
+t    = a triad.
+ti   = a triad in the first inversion.
+t7ii = a 7th chord in the second inversion.
+s2   = a sus2 chord.
+s4i  = a sus4 chord in the first inversion.
+
+Click on the '?' icon above the Interval Offsets text area for a full description of the chord syntax, as well as all of the other functionality related to the Interval Offsets text area. 
+
+It's also worth mentioning that you can add to and edit the list of interval offsets while the clock is running.
+
+The Count button applies the integer offset(s) every N triggers, where N is the value set in the number box to the right of the Count button. For example, if you have a value of 12 in the Interval Offsets text area and the Count button enabled with a value of 2, every second trigger of that droplet wil be transposed up an octave.
 
 The CLR button clears the contents of the Interval Offsets text area, and isn't terribly exciting.
 
 The Probability control sets the probability that the value(s) in the Interval Offsets text area will be added to the base pitch. This works independently from the Probability control in the main Note Event edit area.
+
 
 ### About those rules...
 
