@@ -59,6 +59,15 @@ The CLR button clears the contents of the Interval Offsets text area, and isn't 
 The Probability control sets the probability that the value(s) in the Interval Offsets text area will be added to the base pitch. This works independently from the Probability control in the main Note Event edit area.
 
 
-### About those rules...
+### About those trigger rules...
+
+The trigger rules in the right hand panel are applied to a droplet's height value when it triggers. Each droplet can have one of four different rules applied to it:
+
+Rule|Result
+:----:|------
+ADD| The droplet's height is increased by one after it is triggered. The range of the increase is bound by the value in the range control.
+SUB|The droplet's height is decreased by one after it is triggered. The range of the increase is bound by the value in the range control.
+R+|The droplet's height is increased by a random amount after it is triggered. The range of the increase is bound by the value in the range control.
+R-|The droplet's height is increased by a random amount after it is triggered. The range of the increase is bound by the value in the range control.
 
 When a trigger rule is enabled for a note event, a yellow "R" will appear on that note event's height slider. This is in part because the height slider will not behave normally when a rule is enabled. Kind of hard to describe but just play with it and see. 
