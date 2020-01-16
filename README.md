@@ -27,8 +27,11 @@ Each droplet contains its own interval offset list processor. This looks like a 
 The concept behind this comes from the integer notation approach to pitches you might find in live coding environments like Tidal Cycles and Sonic Pi - integer values entered into the list processor represent musical semitones, where a value of 1 is equal to one semitone. A few quick examples:
 
 0   = no offset
+
 7   = a positive offset of 7 semitones (i.e. a fifth up)
+
 -12 = a negative offset of 12 semitones (i.e. an octave down)
+
 
 When you enter an integer value into the Interval Offsets text area and hit the enter key, it will be added to the base pitch set by the Note and Oct controls when that droplet is triggered. 
 
