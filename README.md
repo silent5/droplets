@@ -26,12 +26,11 @@ Each droplet contains its own interval offset list processor. This looks like a 
 
 The concept behind this comes from the integer notation approach to pitches you might find in live coding environments like Tidal Cycles and Sonic Pi - integer values entered into the list processor represent musical semitones, where a value of 1 is equal to one semitone. A few quick examples:
 
-0   = no offset
-
-7   = a positive offset of 7 semitones (i.e. a fifth up)
-
--12 = a negative offset of 12 semitones (i.e. an octave down)
-
+Value|Resulting offset
+:-----:|----------------
+0|No offset
+7|A positive offset of 7 semitones (i.e. a fifth up)
+-12|A negative offset of 12 semitones (i.e. an octave down)
 
 When you enter an integer value into the Interval Offsets text area and hit the enter key, it will be added to the base pitch set by the Note and Oct controls when that droplet is triggered. 
 
@@ -39,13 +38,15 @@ If you enter more than one integer (separated by spaces) into the Interval Offse
 
 If you enter a lowercase r into the Interval Offsets text area, it will be processed as a rest and there will be no output when that element of the list is processed. 
 
-There is also a simple syntax in place for telling the droplet to output a particular chord shape. A few quick examples:
+There is also a simple syntax in place for telling the droplet to output a particular chord shape. A few quick examples assuming a base pitch of C:
 
-t    = a triad.
-ti   = a triad in the first inversion.
-t7ii = a 7th chord in the second inversion.
-s2   = a sus2 chord.
-s4i  = a sus4 chord in the first inversion.
+Value|Resulting chord shape
+:-----:|-------------------
+t|A triad (C-E-G)
+ti|A triad in the first inversion (E-G-C)
+t7ii|A 7th chord in the second inversion (G-B-C-E)
+s2|A sus2 chord (C-D-G)
+s4i|A sus4 chord in the first inversion (F-G-C)
 
 Click on the '?' icon above the Interval Offsets text area for a full description of the chord syntax, as well as all of the other functionality related to the Interval Offsets text area. 
 
