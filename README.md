@@ -15,7 +15,7 @@ Outgoing notes can have their pitch quantized to a variety of scales. Each dropl
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Panel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Description
 -----|-----------
 ![Droplets Image](img/left.jpg) | The leftmost panel contains 4 color coded sliders. Each of these represent one droplet, and are used to set the height from which a droplet will fall. A mute button for each droplet is located at the top of each height slider. When a droplet has a trigger rule applied to it, a small letter "R" will appear at the lower left of the height slider.
-![Droplets Image](img/middle.jpg) | The middle panel is used to set the parameters for each of the four droplets. It will change its contents (and color) based on which of the four droplets is currently selected. A special "All" mode provides an overview of the essential parameters for every droplet from one high-level view.
+![Droplets Image](img/middle.jpg) ![Droplets Image](img/middleAll.jpg)| The middle panel is used to set the parameters for each of the four droplets. It will change its contents (and color) based on which of the four droplets is currently selected. A special "All" mode provides an overview of the essential parameters for every droplet from one high-level view.
 ![Droplets Image](img/right.jpg) | The rightmost panel is the global area. It is used for preset management, setting the trigger rules for droplet, and for setting the global pitch quantization.
 
 ### About those interval offsets...
